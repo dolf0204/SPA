@@ -10,7 +10,7 @@ public:
 	ComplexNumber(ComplexNumber, ComplexNumber);
 	void get();
 private:
-	int a, b, c, d;
+	int a, b;
 
 
 
