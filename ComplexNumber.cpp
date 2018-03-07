@@ -28,6 +28,5 @@ ComplexNumber::ComplexNumber(ComplexNumber jedan, ComplexNumber dva)
 
 void ComplexNumber::get()
 {
-	this->c = this->a;
-	this->d = this->b;
+	cout << a << "+" << b << "i" << endl;
 }
