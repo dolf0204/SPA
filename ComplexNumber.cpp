@@ -1,5 +1,8 @@
 #include"ComplexNumber.h"
 #include<iostream>
+#include<string>
+#include<sstream>
+
 using namespace std;
 
 ComplexNumber::ComplexNumber(int a, int b)
@@ -26,7 +29,11 @@ ComplexNumber::ComplexNumber(ComplexNumber jedan, ComplexNumber dva)
 	this->b = jedan.b+ dva.b;
 }
 
-void ComplexNumber::get()
+string ComplexNumber::get()
 {
-	cout << a << "+" << b << "i" << endl;
+	stringstream sstr;
+
+	sstr << a << "+" << b << "i";
+
+	return sstr.str();
 }
