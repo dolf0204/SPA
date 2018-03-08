@@ -1,4 +1,8 @@
 #pragma once
+#include<sstream>
+#include<string>
+
+
 
 class ComplexNumber
 {
@@ -8,7 +12,7 @@ public:
 	void set_real(int a);
 	void set_imaginary(int b);
 	ComplexNumber(ComplexNumber, ComplexNumber);
-	void get();
+	std::string get();
 private:
 	int a, b;
 
